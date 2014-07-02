@@ -9,17 +9,25 @@ body {
   font-family: sans-serif;
 }
 .intro{
+  -webkit-animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
   text-align: center;
   width: 100%;
   padding-top: 10em;
-  padding-bottom: 13em;
   font-family: 'Outage';
   font-size: 30px;
 }
 .caption{
+  -webkit-animation-delay: 1s;
+  -webkit-animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  text-align: center;
   font-family: sans-serif;
   font-size: 20px;
+  margin-bottom: 20em;
 }
 .description{
+  padding-top: 1em;
+  padding-bottom: 15em;
   background-color: #74ed2f;
 }
