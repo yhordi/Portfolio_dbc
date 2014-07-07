@@ -8,14 +8,17 @@ body {
   background-color: #b5c9b5;
   font-family: sans-serif;
 }
+.container{
+  width: 100%;
+  padding-top: 10em;
+  font-size: 30px;
+}
 .intro{
   -webkit-animation-name: slideInDown;
   -webkit-animation-duration: 1s;
   text-align: center;
   width: 100%;
-  padding-top: 10em;
   font-family: 'Outage';
-  font-size: 30px;
 }
 .caption{
   -webkit-animation-delay: 1s;
@@ -28,6 +31,9 @@ body {
 }
 .description{
   padding-top: 1em;
-  padding-bottom: 15em;
+  padding-bottom: 26em;
   background-color: #74ed2f;
+}
+.fixed {
+  position: fixed;
 }
