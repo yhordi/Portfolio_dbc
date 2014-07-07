@@ -15,14 +15,14 @@ body {
   font-size: 30px;
 }
 .intro {
-  -webkit-animation-name: slideInDown;
+  -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 1s;
   width: 100%;
   font-family: 'Outage';
   margin-left: 31%;
+  background-color: #b5c9b5;
 }
 .caption{
-  -webkit-animation-delay: 1s;
   -webkit-animation-name: fadeInUp;
   -webkit-animation-duration: 1s;
   font-family: sans-serif;
@@ -46,7 +46,7 @@ body {
   }
 
   100% {
-    -webkit-transform: translateX(31%);
+    -webkit-transform: translateX(-31%);
     transform: translateX(100%);
   }
 }
@@ -60,3 +60,4 @@ body {
   animation-name: slideIn;
   animation-duration: 1s;
 }
+
