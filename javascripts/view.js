@@ -10,6 +10,7 @@ View.prototype = {
       this.view.addFixed()
       } else {
         $(".intro").removeClass("fixed");
+        $(".intro").removeClass("slideIn");
       }
   },
   addFixed: function () {
