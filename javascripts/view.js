@@ -15,6 +15,7 @@ View.prototype = {
   addFixed: function () {
     console.log("yay!")
     $(".intro").addClass("fixed");
+    $(".intro").addClass("slideIn")
   },
   removeFixed: function() {
 
