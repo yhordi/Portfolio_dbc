@@ -6,7 +6,7 @@ View.prototype = {
     if ($(window).scrollTop() >= 296) {
       this.view.addFixed()
       } else {
-        $(".intro").removeClass("fixed");
+        this.view.removeFixed()
         $(".intro").removeClass("slideIn");
       }
   },
@@ -19,6 +19,6 @@ View.prototype = {
 
   },
   removeFixed: function() {
-
+    $(".intro").removeClass("fixed");
   }
 }
