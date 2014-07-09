@@ -6,7 +6,7 @@
   src: url(../fonts/Outage.ttf);
 }
 body {
-  background-color: #b5c9b5;
+  background-color: #74ed2f;
   font-family: sans-serif;
 }
 .container{
@@ -15,12 +15,12 @@ body {
   font-size: 30px;
 }
 .intro {
-  -webkit-animation-name: fadeIn;
+  -webkit-animation-name: fadeInLeft;
   -webkit-animation-duration: 1s;
   width: 100%;
   font-family: 'Outage';
   margin-left: 31%;
-  background-color: #b5c9b5;
+  background-color: #74ed2f;
 }
 .social{
   position: relative;
@@ -32,8 +32,8 @@ body {
 .visible{
   display: inline;
   -webkit-animation-name: fadeIn;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+  -webkit-animation-duration: .5s;
 }
 
 .caption{
@@ -61,15 +61,17 @@ body {
 .description{
   padding-top: 1em;
   padding-bottom: 26em;
-  background-color: #74ed2f;
+  background-color: #b5c9b5;
 }
 
 .fixed {
+  display: inline;
+  top: 0;
   position: fixed;
 }
 @-webkit-keyframes slideIn {
   0% {
-    -webkit-transform: translateX0);
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
@@ -79,13 +81,10 @@ body {
   }
 }
 
-.slideIn{
-  display: inline;
-  top: 0;
+.slideIn {
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: .5s;
   -webkit-animation-fill-mode: forwards;
   animation-name: slideIn;
   animation-duration: 1s;
 }
-
