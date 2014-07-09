@@ -7,7 +7,7 @@ View.prototype = {
       this.view.addFixed()
       } else {
         this.view.removeFixed()
-        $(".intro").removeClass("slideIn");
+        this.view.removeSlideIn()
       }
   },
   addFixed: function () {
@@ -17,6 +17,9 @@ View.prototype = {
   },
   addSlideIn: function () {
 
+  },
+  removeSlideIn: function () {
+    $(".intro").removeClass("slideIn");
   },
   removeFixed: function() {
     $(".intro").removeClass("fixed");
