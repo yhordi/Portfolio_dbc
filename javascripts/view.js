@@ -1,25 +1,30 @@
 var View = function() {
-  this.topHit = 0
 }
 
 View.prototype = {
   fix: function () {
     if ($(window).scrollTop() >= 296) {
-
       this.view.addFixed()
-      } else if (this.view.topHit === 1){
-        $(".intro").addClass("fadeIn")
+      this.view.addSlideIn()
+      this.view.socialVisible()
       } else {
-        $(".intro").removeClass("fixed");
-        $(".intro").removeClass("slideIn");
+        this.view.removeFixed()
+        this.view.removeSlideIn()
       }
   },
   addFixed: function () {
     $(".intro").addClass("fixed");
+  },
+  addSlideIn: function () {
     $(".intro").addClass("slideIn")
-    $(".social").addClass("visible")
+  },
+  removeSlideIn: function () {
+    $(".intro").removeClass("slideIn");
   },
   removeFixed: function() {
-
+    $(".intro").removeClass("fixed");
+  },
+  socialVisible: function() {
+    $(".social").addClass("visible")
   }
 }
