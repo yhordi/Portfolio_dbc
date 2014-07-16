@@ -11,6 +11,9 @@
   font-weight: 400;
   src: url(../fonts/OstrichSans-Medium.otf);
 }
+html{
+  background-color: #484f48;
+}
 body {
   background-color: #74ed2f;
   font-family: sans-serif;
@@ -77,17 +80,9 @@ a:hover {
   padding-top: 5em;
   background-color: #484f48;
 }
-.bootTrack{
-  background-image: url("../images/boottrack.png");
-  background-color: #b5c9b5;
-  padding-top: 5em;
-  padding-bottom: 26em;
-  -webkit-box-shadow: inset 0px 0px 30px 0px #b5c9b5;
-  -moz-box-shadow:    inset 0px 0px 30px 0px #b5c9b5;
-  box-shadow:         inset 0px 0px 30px 0px #b5c9b5;
-  height: 1em;
-}
+.project{
 
+}
 .description{
   text-align: center;
   font-family: 'Oslo II';
@@ -97,9 +92,36 @@ a:hover {
   padding-top: 3em;
   padding-bottom: 2em;
   position: relative;
-  top: -2em;
   color: white;
   transition: opacity, 1s;
+}
+.bootTrack{
+  background-image: url("../images/boottrack.png");
+  margin-top: 30em;
+  padding-top: 5em;
+  padding-bottom: 26em;
+  height: 1em;
+  top: -2em;
+  margin-bottom: 2em;
+}
+.bootTrack > .description {
+  padding-bottom: .8em;
+  top:-2em;
+}
+.wackOverflow{
+  background-image: url("../images/wackoverflow.png");
+  height: 25em;
+  margin-top: 42em;
+  margin-bottom: 42em;
+}
+.missionTracker{
+  margin-top: 10em;
+  margin-bottom: 10em;
+  background-image: url("../images/missiontracker.png");
+}
+
+.missiontracker > .description{
+  top: 0;
 }
 
 .description:hover{
