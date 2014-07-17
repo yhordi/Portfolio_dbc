@@ -95,6 +95,11 @@ a:hover {
   color: white;
   transition: opacity, 1s;
 }
+.text{
+  text-align: center;
+  font-family: 'Oslo II';
+  font-size: 3em;
+}
 .bootTrack{
   background-image: url("../images/boottrack.png");
   margin-top: 30em;
@@ -110,18 +115,22 @@ a:hover {
 }
 .wackOverflow{
   background-image: url("../images/wackoverflow.png");
-  height: 25em;
-  margin-top: 42em;
+  height: 30em;
+  margin-top: 20em;
   margin-bottom: 42em;
+}
+.wackoverflow > .description {
+  height: 7em;
 }
 .missionTracker{
   margin-top: 10em;
-  margin-bottom: 10em;
+  margin-bottom: 11em;
   background-image: url("../images/missiontracker.png");
 }
 
-.missiontracker > .description{
+.missiontracker > .description {
   top: 0;
+  height: 290px;
 }
 
 .description:hover{
