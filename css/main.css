@@ -106,10 +106,19 @@ a:hover {
   color: white;
   transition: opacity, 1s;
 }
-.text{
+.dbc{
+  vertical-align: middle;
+  height: 20em;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/dbc.png");
   text-align: center;
   font-family: 'Oslo II';
   font-size: 3em;
+}
+.dbcText{
+  z-index: 1;
 }
 .bootTrack{
   background-image: url("../images/boottrack.png");
