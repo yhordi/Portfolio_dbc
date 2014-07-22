@@ -106,9 +106,10 @@ a:hover {
   color: white;
   transition: opacity, 1s;
 }
+
 .dbc{
   vertical-align: middle;
-  height: 20em;
+  height: 10em;
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: center;
@@ -118,11 +119,13 @@ a:hover {
   font-size: 3em;
 }
 .dbcText{
-  z-index: 1;
+  z-index: 0;
+  color: white;
 }
 .bootTrack{
+  z-index: 2009;
   background-image: url("../images/boottrack.png");
-  margin-top: 30em;
+  /*margin-top: 30em;*/
   padding-top: 5em;
   padding-bottom: 26em;
   height: 1em;
@@ -133,6 +136,7 @@ a:hover {
   padding-bottom: .8em;
   top:-2em;
 }
+
 .wackOverflow{
   background-image: url("../images/wackoverflow.png");
   height: 30em;
@@ -157,21 +161,26 @@ a:hover {
   transition: opacity, 1s;
   opacity: .94;
 }
-.fixed {
-  z-index: 10;
+.displayInline{
   display: inline;
+}
+.fixed {
   top: 0;
   position: fixed;
 }
+.zIndex{
+  z-index: 1;
+}
+
 @-webkit-keyframes slideIn {
   0% {
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+    /*transform: translateX(0);*/
   }
 
   100% {
     -webkit-transform: translateX(-31%);
-    transform: translateX(100%);
+    /*transform: translateX(100%);*/
   }
 }
 
@@ -182,3 +191,22 @@ a:hover {
   animation-name: slideIn;
   animation-duration: 1s;
 }
+
+@-webkit-keyframes arrowFadeOut {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+  }
+}
+.arrowFadeOut {
+  -webkit-animation-name: arrowFadeOut;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+  /*animation-name: fadeOut;*/
+}
+
+
