@@ -37,7 +37,7 @@ a:hover {
   -webkit-animation-duration: 1s;
   width: 100%;
   font-family: 'Outage';
-  margin-left: 31%;
+  margin-left: 28%;
   background-color: #74ed2f;
 }
 .social{
@@ -119,11 +119,9 @@ a:hover {
   font-size: 3em;
 }
 .dbcText{
-  z-index: 0;
   color: white;
 }
 .bootTrack{
-  z-index: 2009;
   background-image: url("../images/boottrack.png");
   /*margin-top: 30em;*/
   padding-top: 5em;
@@ -168,9 +166,7 @@ a:hover {
   top: 0;
   position: fixed;
 }
-.zIndex{
-  z-index: 1;
-}
+
 
 @-webkit-keyframes slideIn {
   0% {
@@ -179,7 +175,7 @@ a:hover {
   }
 
   100% {
-    -webkit-transform: translateX(-31%);
+    -webkit-transform: translateX(-28%);
     /*transform: translateX(100%);*/
   }
 }
