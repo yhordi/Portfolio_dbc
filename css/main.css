@@ -153,7 +153,13 @@ a:hover {
   top: 0;
   height: 290px;
 }
-
+.thinkful{
+  margin-top: 10em;
+  margin-bottom: 11em;
+  background-image: url("../images/thinkfularrowlarge.png");
+  background-size: 100%;
+  height: 18em;
+}
 .description:hover{
   transition: opacity, 1s;
   opacity: .94;
