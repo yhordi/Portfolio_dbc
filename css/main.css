@@ -5,9 +5,27 @@
   font-weight: 400;
   src: url(../fonts/Outage.ttf);
 }
+@font-face {
+  font-family: 'Oslo II';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OstrichSans-Medium.otf);
+}
+html{
+  background-color: #484f48;
+}
 body {
   background-color: #74ed2f;
   font-family: sans-serif;
+}
+a {
+  color: #ec7b08;
+  transition: text-shadow, color, .5s;
+}
+a:hover {
+  color: black;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+  transition: text-shadow, color, .5s;
 }
 .container{
   width: 100%;
@@ -19,7 +37,7 @@ body {
   -webkit-animation-duration: 1s;
   width: 100%;
   font-family: 'Outage';
-  margin-left: 31%;
+  margin-left: 28%;
   background-color: #74ed2f;
 }
 .social{
@@ -39,9 +57,20 @@ body {
 .caption{
   font-family: sans-serif;
   font-size: 20px;
-  margin-bottom: 20em;
+  margin-bottom: 18em;
   text-align: center;
 }
+.arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 50px 0 50px;
+  border-color: black transparent transparent transparent;
+  margin: auto;
+  bottom: -1em;
+  position: relative;
+}
+
 .ruby{
   -webkit-animation-name: fadeIn;
   -webkit-animation-delay: .5s;
@@ -58,26 +87,101 @@ body {
   -webkit-animation-delay: 1.5s;
   -webkit-animation-duration: 1.5s;
 }
+.projectsContainer{
+  padding-top: 5em;
+  background-color: #484f48;
+}
+.project{
+
+}
 .description{
-  padding-top: 1em;
-  padding-bottom: 26em;
-  background-color: #b5c9b5;
+  text-align: center;
+  font-family: 'Oslo II';
+  font-size: 3em;
+  background-color: #484f48;
+  opacity: 0;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  position: relative;
+  color: white;
+  transition: opacity, 1s;
 }
 
-.fixed {
+.dbc{
+  vertical-align: middle;
+  height: 10em;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/dbc.png");
+  text-align: center;
+  font-family: 'Oslo II';
+  font-size: 3em;
+}
+.dbcText{
+  color: white;
+}
+.bootTrack{
+  background-image: url("../images/boottrack.png");
+  /*margin-top: 30em;*/
+  padding-top: 5em;
+  padding-bottom: 26em;
+  height: 1em;
+  top: -2em;
+  margin-bottom: 2em;
+}
+.bootTrack > .description {
+  padding-bottom: .8em;
+  top:-2em;
+}
+
+.wackOverflow{
+  background-image: url("../images/wackoverflow.png");
+  height: 30em;
+  margin-top: 20em;
+}
+.wackoverflow > .description {
+  height: 7em;
+}
+.missionTracker{
+  margin-top: 10em;
+  margin-bottom: 11em;
+  background-image: url("../images/missiontracker.png");
+}
+
+.missiontracker > .description {
+  top: 0;
+  height: 290px;
+}
+.thinkful{
+  margin-top: 10em;
+  margin-bottom: 11em;
+  background-image: url("../images/thinkfularrowlarge.png");
+  background-size: 100%;
+  height: 18em;
+}
+.description:hover{
+  transition: opacity, 1s;
+  opacity: .94;
+}
+.displayInline{
   display: inline;
+}
+.fixed {
   top: 0;
   position: fixed;
 }
+
+
 @-webkit-keyframes slideIn {
   0% {
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+    /*transform: translateX(0);*/
   }
 
   100% {
-    -webkit-transform: translateX(-31%);
-    transform: translateX(100%);
+    -webkit-transform: translateX(-28%);
+    /*transform: translateX(100%);*/
   }
 }
 
@@ -88,3 +192,22 @@ body {
   animation-name: slideIn;
   animation-duration: 1s;
 }
+
+@-webkit-keyframes arrowFadeOut {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+  }
+}
+.arrowFadeOut {
+  -webkit-animation-name: arrowFadeOut;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+  /*animation-name: fadeOut;*/
+}
+
+
