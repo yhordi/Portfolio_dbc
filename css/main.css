@@ -123,7 +123,8 @@ a:hover {
 }
 .bootTrack{
   background-image: url("../images/boottrack.png");
-  /*margin-top: 30em;*/
+  background-position: center;
+  background-size: 100%;
   padding-top: 5em;
   padding-bottom: 26em;
   height: 1em;
@@ -131,22 +132,27 @@ a:hover {
   margin-bottom: 2em;
 }
 .bootTrack > .description {
-  padding-bottom: .8em;
-  top:-2em;
+  padding-bottom: 1.8em;
+  top: -1.675em;
 }
 
 .wackOverflow{
   background-image: url("../images/wackoverflow.png");
+  background-size: 100%;
+  background-position: center;
   height: 30em;
-  margin-top: 20em;
+  padding-top: 10em;
 }
 .wackoverflow > .description {
-  height: 7em;
+  height: 10em;
+  top: -3.5em;
 }
 .missionTracker{
   margin-top: 10em;
   margin-bottom: 11em;
   background-image: url("../images/missiontracker.png");
+  background-position: center;
+  background-size: 100%;
 }
 
 .missiontracker > .description {
@@ -154,10 +160,11 @@ a:hover {
   height: 290px;
 }
 .thinkful{
-  margin-top: 10em;
+  /*margin-top: 10em;*/
   margin-bottom: 11em;
   background-image: url("../images/thinkfularrowlarge.png");
   background-size: 100%;
+  background-position: center;
   height: 18em;
 }
 .description:hover{
