@@ -88,7 +88,7 @@ a:hover {
   -webkit-animation-duration: 1.5s;
 }
 .projectsContainer{
-  padding-top: 5em;
+  /*padding-top: 5em;*/
   background-color: #484f48;
 }
 .project{
@@ -107,19 +107,23 @@ a:hover {
   transition: opacity, 1s;
 }
 
-.dbc{
+.section{
   vertical-align: middle;
-  height: 10em;
-  background-size: 75%;
+  height: 14em;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/dbc.png");
-  text-align: center;
   font-family: 'Oslo II';
   font-size: 3em;
 }
-.dbcText{
+.dbc{
+  background-size: 75%;
+  background-image: url("../images/dbc.png");
+  background-attachment: fixed;
+}
+.text {
+  text-align: center;
   color: white;
+  padding-top: 3em;
 }
 .bootTrack{
   background-image: url("../images/boottrack.png");
@@ -129,7 +133,7 @@ a:hover {
   padding-bottom: 26em;
   height: 1em;
   top: -2em;
-  margin-bottom: 2em;
+  /*margin-bottom: 2em;*/
 }
 .bootTrack > .description {
   padding-bottom: 1.8em;
@@ -140,32 +144,38 @@ a:hover {
   background-image: url("../images/wackoverflow.png");
   background-size: 100%;
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   height: 30em;
   padding-top: 10em;
 }
 .wackoverflow > .description {
-  height: 10em;
-  top: -3.5em;
+  height: 8.4em;
+  top: -3.35em;
 }
 .missionTracker{
-  margin-top: 10em;
-  margin-bottom: 11em;
+  padding-top: 7.85em;
   background-image: url("../images/missiontracker.png");
   background-position: center;
   background-size: 100%;
+  background-repeat: no-repeat;
+  height: 18em;
 }
 
 .missiontracker > .description {
-  top: 0;
-  height: 290px;
+  top: -2.62em;
+  height: 7em;
+  padding-bottom: 0;
 }
 .thinkful{
-  /*margin-top: 10em;*/
-  margin-bottom: 11em;
+  margin-bottom: 6em;
   background-image: url("../images/thinkfularrowlarge.png");
   background-size: 100%;
   background-position: center;
-  height: 18em;
+  background-attachment: fixed;
+}
+.thinkfulText{
+  padding-top: 6em;
 }
 .description:hover{
   transition: opacity, 1s;
