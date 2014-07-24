@@ -12,18 +12,18 @@
   src: url(../fonts/OstrichSans-Medium.otf);
 }
 html{
-  background-color: #484f48;
+  background-color: #cbe4cb;
 }
 body {
   background-color: #74ed2f;
   font-family: sans-serif;
 }
 a {
-  color: #ec7b08;
+  color: black;
   transition: text-shadow, color, .5s;
 }
 a:hover {
-  color: black;
+  color: lime;
   text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
   transition: text-shadow, color, .5s;
 }
@@ -89,7 +89,8 @@ a:hover {
 }
 .projectsContainer{
   /*padding-top: 5em;*/
-  background-color: #484f48;
+
+  background-color: #cbe4cb;
 }
 .project{
 
@@ -98,7 +99,7 @@ a:hover {
   text-align: center;
   font-family: 'Oslo II';
   font-size: 3em;
-  background-color: #484f48;
+  background-color: #bdc7bd;
   opacity: 0;
   padding-top: 3em;
   padding-bottom: 2em;
@@ -113,6 +114,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   font-family: 'Oslo II';
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
   font-size: 3em;
 }
 .dbc{
@@ -120,10 +122,11 @@ a:hover {
   background-image: url("../images/dbc.png");
   background-attachment: fixed;
 }
+
 .text {
   text-align: center;
-  color: white;
   padding-top: 3em;
+  color: #484f48;
 }
 .bootTrack{
   background-image: url("../images/boottrack.png");
@@ -147,11 +150,19 @@ a:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 30em;
-  padding-top: 10em;
+  color: black;
+  /*padding-top: 10em;*/
 }
-.wackoverflow > .description {
+.wackoverflow > .section{
+  text-shadow: 0px 0px 21px rgba(0, 0, 0, 1);
+}
+.wackoverflow > .text {
+  padding-top: 0;
   height: 8.4em;
   top: -3.35em;
+}
+.light{
+  color: white;
 }
 .missionTracker{
   padding-top: 7.85em;
@@ -159,13 +170,13 @@ a:hover {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 18em;
+  height: 35em;
 }
 
 .missiontracker > .description {
   top: -2.62em;
-  height: 7em;
-  padding-bottom: 0;
+  height: 6em;
+  padding-bottom: 5.3em;
 }
 .thinkful{
   margin-bottom: 6em;
@@ -176,6 +187,7 @@ a:hover {
 }
 .thinkfulText{
   padding-top: 6em;
+  margin: 0;
 }
 .description:hover{
   transition: opacity, 1s;
