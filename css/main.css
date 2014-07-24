@@ -24,7 +24,7 @@ a {
 }
 a:hover {
   color: lime;
-  text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
   transition: text-shadow, color, .5s;
 }
 .container{
@@ -37,7 +37,9 @@ a:hover {
   -webkit-animation-duration: 1s;
   width: 100%;
   font-family: 'Outage';
-  margin-left: 28%;
+  margin-left: auto;
+  z-index: 1;
+  text-align: center;
   background-color: #74ed2f;
 }
 .social{
@@ -101,8 +103,7 @@ a:hover {
   font-size: 3em;
   background-color: #bdc7bd;
   opacity: 0;
-  padding-top: 3em;
-  padding-bottom: 2em;
+  height: 100%;
   position: relative;
   color: white;
   transition: opacity, 1s;
@@ -122,7 +123,10 @@ a:hover {
   background-image: url("../images/dbc.png");
   background-attachment: fixed;
 }
+p {
+  margin: 0;
 
+}
 .text {
   text-align: center;
   padding-top: 3em;
@@ -133,8 +137,7 @@ a:hover {
   background-position: center;
   background-size: 100%;
   padding-top: 5em;
-  padding-bottom: 26em;
-  height: 1em;
+  height: 66%;
   top: -2em;
   /*margin-bottom: 2em;*/
 }
@@ -149,7 +152,7 @@ a:hover {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 30em;
+  height: 66%;
   color: black;
   /*padding-top: 10em;*/
 }
@@ -165,18 +168,17 @@ a:hover {
   color: white;
 }
 .missionTracker{
-  padding-top: 7.85em;
+  /*padding-top: 7.85em;*/
   background-image: url("../images/missiontracker.png");
-  background-position: center;
+  background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 35em;
+  height: 66%;
 }
 
 .missiontracker > .description {
-  top: -2.62em;
-  height: 6em;
-  padding-bottom: 5.3em;
+  /*top: -2.62em;*/
+  height: 100%;
 }
 .thinkful{
   margin-bottom: 6em;
@@ -202,25 +204,7 @@ a:hover {
 }
 
 
-@-webkit-keyframes slideIn {
-  0% {
-    -webkit-transform: translateX(0);
-    /*transform: translateX(0);*/
-  }
 
-  100% {
-    -webkit-transform: translateX(-28%);
-    /*transform: translateX(100%);*/
-  }
-}
-
-.slideIn {
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: .5s;
-  -webkit-animation-fill-mode: forwards;
-  animation-name: slideIn;
-  animation-duration: 1s;
-}
 
 @-webkit-keyframes arrowFadeOut {
   0% {
@@ -239,4 +223,100 @@ a:hover {
   /*animation-name: fadeOut;*/
 }
 
+@media screen and (min-width: 1334px){
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: translateX(0);
+      /*transform: translateX(0);*/
+    }
 
+    100% {
+      -webkit-transform: translateX(-11.5%);
+      /*transform: translateX(100%);*/
+    }
+  }
+  .intro{
+      padding-right: 66%;
+  }
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+}
+@media screen and (min-width: 1600px){
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: translateX(0);
+      /*transform: translateX(0);*/
+    }
+
+    100% {
+      -webkit-transform: translateX(-27%);
+      /*transform: translateX(100%);*/
+    }
+  }
+  .intro{
+      padding-right: 0;
+  }
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
