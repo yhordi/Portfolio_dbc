@@ -9,7 +9,7 @@
   font-family: 'Oslo II';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/OstrichSans-Medium.otf);
+  src: url(../fonts/Overpass_Regular.ttf);
 }
 html{
   background-color: #cbe4cb;
@@ -19,13 +19,13 @@ body {
   font-family: sans-serif;
 }
 a {
-  color: black;
+  color: #324E99;
   transition: text-shadow, color, .5s;
   text-decoration: none;
   font-weight: bold;
 }
 a:hover {
-  color: lime;
+  color: #edf36d;
   text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
   transition: text-shadow, color, .5s;
 }
@@ -92,17 +92,16 @@ a:hover {
   -webkit-animation-duration: 1.5s;
 }
 .projectsContainer{
-  /*padding-top: 5em;*/
-
   background-color: #cbe4cb;
 }
 .project{
 
 }
 .description{
-  text-align: center;
+  /*text-align: center;*/
+  background-attachment: top;
   font-family: 'Oslo II';
-  font-size: 3em;
+  font-size: 2em;
   background-color: #bdc7bd;
   opacity: 0;
   height: 100%;
@@ -118,21 +117,24 @@ a:hover {
   background-position: center;
   font-family: 'Oslo II';
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
-  font-size: 3em;
+  font-size: 2em;
 }
 .dbc{
   background-size: 75%;
   background-image: url("../images/dbc.png");
   background-attachment: fixed;
+  padding-bottom: 3em;
+  ba
 }
 p {
   margin: 0;
 
 }
 .text {
-  text-align: center;
+  /*text-align: center;*/
   padding-top: 3em;
-  color: #484f48;
+  color: black;
+  text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
 }
 .bootTrack{
   background-image: url("../images/boottrack.png");
@@ -144,8 +146,8 @@ p {
   /*margin-bottom: 2em;*/
 }
 .bootTrack > .description {
-  padding-bottom: 1.8em;
-  top: -1.675em;
+  padding-bottom: 2.5em;
+  top: -2.5em;
 }
 
 .wackOverflow{
@@ -158,9 +160,7 @@ p {
   color: black;
   /*padding-top: 10em;*/
 }
-.wackoverflow > .section{
-  text-shadow: 0px 0px 21px rgba(0, 0, 0, 1);
-}
+
 .wackoverflow > .text {
   padding-top: 0;
   height: 8.4em;
@@ -168,6 +168,8 @@ p {
 }
 .light{
   color: white;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+
 }
 .missionTracker{
   /*padding-top: 7.85em;*/
