@@ -5,5 +5,6 @@ function Controller(view) {
 Controller.prototype = {
   bindListeners: function() {
     $(window).on("scroll", this.view.fix.bind(this))
+    $(".defrost").hover(this.view.hoverOver)
   }
 }

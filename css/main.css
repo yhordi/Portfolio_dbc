@@ -9,17 +9,17 @@
   font-family: 'Oslo II';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/Overpass_Regular.ttf);
+  src: url(../fonts/Aaargh.ttf);
 }
 html{
   background-color: #cbe4cb;
 }
 body {
-  background-color: #74ed2f;
+  /*background-color: #74ed2f;*/
   font-family: sans-serif;
 }
-a {
-  color: #324E99;
+a{
+  color: lime;
   transition: text-shadow, color, .5s;
   text-decoration: none;
   font-weight: bold;
@@ -30,6 +30,8 @@ a:hover {
   transition: text-shadow, color, .5s;
 }
 .container{
+  padding-bottom: 10em;
+  background-color: #74ed2f;
   width: 100%;
   padding-top: 10em;
   font-size: 30px;
@@ -43,6 +45,7 @@ a:hover {
   z-index: 1;
   text-align: center;
   background-color: #74ed2f;
+  color: black;
 }
 .social{
   position: relative;
@@ -61,10 +64,11 @@ a:hover {
 .caption{
   font-family: sans-serif;
   font-size: 20px;
-  margin-bottom: 18em;
   text-align: center;
+  background-color: #74ed2f;
 }
 .arrow {
+  background-color: #74ed2f;
   width: 0;
   height: 0;
   border-style: solid;
@@ -94,14 +98,21 @@ a:hover {
 .projectsContainer{
   background-color: #cbe4cb;
 }
-.project{
-
+.technologies{
+  /*display: inline;*/
+  list-style-type: square;
+}
+li {
+  display: inline;
+}
+.bullet{
+height: 10px;
 }
 .description{
   /*text-align: center;*/
   background-attachment: top;
   font-family: 'Oslo II';
-  font-size: 2em;
+  font-size: 1em;
   background-color: #bdc7bd;
   opacity: 0;
   height: 100%;
@@ -110,37 +121,78 @@ a:hover {
   transition: opacity, 1s;
 }
 
+.text {
+  z-index: 1;
+  margin: 1.5em 5em 0 5em;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  background-color: rgba(50, 50, 50, .8)
+}
+.right{
+  float: right;
+
+}
 .section{
   vertical-align: middle;
-  height: 14em;
+  height: 16.1em;
   background-repeat: no-repeat;
   background-position: center;
   font-family: 'Oslo II';
-  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
-  font-size: 2em;
+  margin: auto;
+  padding-top: 6em;
+  /*text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);*/
+  font-size: 1.5em;
+  /*background-color: rgba(100, 100, 100, .5);*/
+}
+.jordan{
+  display: inline;
+  border-color: lime;
+}
+.about{
+  font-family: 'Oslo II';
+  background-image: url("../images/jordan.jpg");
+  background-repeat: no-repeat;
+  font-size: 1.5em;
+  -webkit-box-shadow: 0px 0px 29px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 29px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 29px 0px rgba(50, 50, 50, 0.75);
+}
+.about .text{
+  z-index: 1;
+  margin-top: -14.875em;
+  margin-left: 24%;
+  margin-right: 0;
+  padding: 1em;
+  padding-top: 4.82em;
+  padding-bottom: 4.9em;
+  text-align: left;
 }
 .dbc{
   background-size: 75%;
   background-image: url("../images/dbc.png");
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   padding-bottom: 3em;
-  ba
+  padding-top: 3em;
+  -webkit-box-shadow: 0px 14px 29px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 14px 29px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 14px 29px 0px rgba(50, 50, 50, 0.75);
+  z-index: 1;
 }
+.dbc .text{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 p {
   margin: 0;
-
-}
-.text {
-  /*text-align: center;*/
-  padding-top: 3em;
-  color: black;
-  text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
 }
 .bootTrack{
   background-image: url("../images/boottrack.png");
   background-position: center;
   background-size: 100%;
-  padding-top: 5em;
+  background-attachment: fixed;
+  /*padding-top: 5em;*/
   height: 66%;
   top: -2em;
   /*margin-bottom: 2em;*/
@@ -148,6 +200,7 @@ p {
 .bootTrack > .description {
   padding-bottom: 2.5em;
   top: -2.5em;
+
 }
 
 .wackOverflow{
@@ -158,6 +211,7 @@ p {
   background-repeat: no-repeat;
   height: 66%;
   color: black;
+  filter: blur(50px);
   /*padding-top: 10em;*/
 }
 
@@ -169,7 +223,6 @@ p {
 .light{
   color: white;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
-
 }
 .missionTracker{
   /*padding-top: 7.85em;*/
@@ -189,12 +242,16 @@ p {
   background-image: url("../images/thinkfularrowlarge.png");
   background-size: 100%;
   background-position: center;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 }
 .thinkfulText{
-  padding-top: 6em;
+  padding: 2em 0 2em 0;
   margin: 0;
 }
+/*.thinkful .glass{
+  background-color: rgba(240, 255, 240, .8);
+  height: 515px;
+}*/
 .description:hover{
   transition: opacity, 1s;
   opacity: .94;

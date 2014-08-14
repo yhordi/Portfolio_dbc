@@ -14,16 +14,6 @@ View.prototype = {
       this.view.removeSocialVisible()
       this.view.removeSlideIn()
       }
-    // if ($(window).scrollTop() >= 811) {
-    //   this.view.addFixedToDbc()
-    // } else {
-    //   this.view.removeFixedFromDbc()
-    // }
-    // if ($(window).scrollTop() >= 2000 ) {
-    //   this.view.dbcHide()
-    // } else {
-    //   this.view.dbcShow()
-    // }
   },
   addFixed: function () {
     $(".intro").addClass("fixed");
@@ -63,5 +53,11 @@ View.prototype = {
   },
   fadeArrowOut: function() {
     $(".arrow").addClass("arrowFadeOut")
+  },
+  backroundEmphasis: function() {
+    $(".defrost").hide(".glass")
+  },
+  hoverOver: function(){
+    $(".defrost").css(".glass")
   }
 }
