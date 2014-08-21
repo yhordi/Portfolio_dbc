@@ -404,7 +404,7 @@ p {
   }
 
 }
-@media screen and (max-width: 1920px){
+@media screen and (min-width: 1920px){
   @-webkit-keyframes slideIn {
     0% {
       -webkit-transform: translateX(0);
