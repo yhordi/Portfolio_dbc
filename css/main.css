@@ -98,10 +98,9 @@ a:hover {
   -webkit-animation-duration: 1.5s;
 }
 .projectsContainer{
-  background-color: #cbe4cb;
+  background-color: #2D8E71;
 }
 .technologies{
-  /*display: inline;*/
   list-style-type: square;
 }
 li {
@@ -111,7 +110,6 @@ li {
 height: 10px;
 }
 .description{
-  /*text-align: center;*/
   background-attachment: top;
   font-family: 'Oslo II';
   font-size: 1em;
@@ -125,7 +123,7 @@ height: 10px;
 
 .text {
   z-index: 1;
-  margin-top: 8.5em;
+  margin-top: 9em;
   padding: 1em;
   color: white;
   /*text-align: center;*/
@@ -145,8 +143,15 @@ height: 10px;
   padding-top: 5em;
   font-size: 1.5em;
 }
+.pic{
+  margin: 0 3em 0 3em;
+}
 .jordan{
   display: inline;
+}
+.dbc .pic{
+  display: inline;
+  float: right;
 }
 .about{
   font-family: 'Oslo II';
@@ -169,7 +174,7 @@ height: 10px;
 }
 .dbc{
   background-size: 75%;
-  background-image: url("../images/dbc.png");
+  /*background-image: url("../images/dbc.png");*/
   padding-bottom: 3em;
   padding-top: 3em;
   -webkit-box-shadow: 0px 14px 29px 0px rgba(50, 50, 50, 0.75);
@@ -232,14 +237,19 @@ p {
 }
 .thinkful{
   /*margin-bottom: 6em;*/
-  background-image: url("../images/thinkfularrowlarge.png");
-  background-size: 100%;
+  /*background-image: url("../images/thinkfularrowlarge.png");*/
   background-position: center;
   padding-top: 8em;
 }
 .thinkfulText{
   padding: 2em 0 2em 0;
   margin: 0;
+  float: right
+}
+
+.thinkful .pic{
+  float: left;
+  height: 3em;
 }
 .description:hover{
   transition: opacity, 1s;
@@ -253,13 +263,9 @@ p {
   position: fixed;
 }
 .footer{
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   font-size: .8em;
-   text-align: center;
+  margin-top: 10em;
+  font-size: .8em;
+  text-align: center;
 }
 
 
