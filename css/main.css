@@ -125,7 +125,7 @@ height: 10px;
   padding: 1em;
   color: white;
   text-align: center;
-  background-color: rgba(50, 50, 50, .8)
+  background-color: rgba(0, 0, 0, .8)
 }
 .right{
   float: right;
@@ -226,7 +226,7 @@ p {
   height: 100%;
 }
 .thinkful{
-  margin-bottom: 6em;
+  /*margin-bottom: 6em;*/
   background-image: url("../images/thinkfularrowlarge.png");
   background-size: 100%;
   background-position: center;
@@ -318,6 +318,7 @@ p {
   }
 }
 
+/*Media Queries*/
 
 @media screen and (max-width: 1440px){
   @-webkit-keyframes slideIn {
