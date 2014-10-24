@@ -12,12 +12,13 @@
   src: url(../fonts/Aaargh.ttf);
 }
 
-html{
-  background-color: #cbe4cb;
-}
 
 body {
   font-family: sans-serif;
+}
+
+.intro{
+  text-align: center;
 }
 
 a {
@@ -45,9 +46,10 @@ a:hover {
   font-family: 'Outage';
   margin-left: auto;
   z-index: 1;
-  text-align: center;
   background-color: #53A41E;
   color: black;
+  left: 11.5%;
+  top: -200px;
 }
 .social{
   position: relative;
@@ -69,18 +71,6 @@ a:hover {
   text-align: center;
   background-color: #53A41E;
 }
-.arrow {
-  background-color: #53A41E;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 50px 50px 0 50px;
-  border-color: black transparent transparent transparent;
-  margin: auto;
-  bottom: -1em;
-  position: relative;
-}
-
 .ruby{
   -webkit-animation-name: fadeIn;
   -webkit-animation-delay: .5s;
@@ -147,7 +137,7 @@ height: 10px;
   margin: 0 3em 0 3em;
 }
 .jordan{
-  display: inline;
+  display: inline-block;
 }
 .dbc .pic{
   display: inline;
@@ -155,12 +145,8 @@ height: 10px;
 }
 .about{
   font-family: 'Oslo II';
-  background-image: url("../images/jordan.jpg");
-  background-repeat: no-repeat;
+  display: inline;
   font-size: 1.5em;
-  -webkit-box-shadow: 0px 0px 29px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    0px 0px 29px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         0px 0px 29px 0px rgba(50, 50, 50, 0.75);
 }
 .about .text{
   z-index: 1;
@@ -236,8 +222,6 @@ p {
   height: 100%;
 }
 .thinkful{
-  /*margin-bottom: 6em;*/
-  /*background-image: url("../images/thinkfularrowlarge.png");*/
   background-position: center;
   padding-top: 8em;
 }
@@ -246,7 +230,6 @@ p {
   margin: 0;
   float: right
 }
-
 .thinkful .pic{
   float: left;
   height: 3em;
@@ -267,7 +250,12 @@ p {
   font-size: .8em;
   text-align: center;
 }
-
+.textLeft{
+  text-align: left;
+}
+.textCenter{
+  text-align: center;
+}
 
 
 @-webkit-keyframes arrowFadeOut {
@@ -352,7 +340,10 @@ p {
     }
   }
   .intro{
-      padding-right: 66%;
+      /*padding-right: 66%;*/
+  }
+  .textRight{
+    text-align: right;
   }
   .slideIn {
     -webkit-animation-name: slideIn;
