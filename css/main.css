@@ -97,7 +97,7 @@ li {
   display: inline;
 }
 .bullet{
-height: 10px;
+  height: 10px;
 }
 .description{
   background-attachment: top;
@@ -125,7 +125,7 @@ height: 10px;
 }
 .section{
   vertical-align: middle;
-  height: 16.1em;
+  /*height: 16.1em;*/
   background-repeat: no-repeat;
   background-position: center;
   font-family: 'Oslo II';
@@ -137,32 +137,39 @@ height: 10px;
   margin: 0 3em 0 3em;
 }
 .jordan{
-  display: inline-block;
+  top: 2em;
+  border-radius: 100%;
 }
 .dbc .pic{
   display: inline;
   float: right;
 }
 .about{
+  background: url(../images/oakland_night_skyline_web_by_thedude2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  height: 45em;
   font-family: 'Oslo II';
-  display: inline;
-  font-size: 1.5em;
+  display: block;
+  text-align: center
 }
-.about .text{
-  z-index: 1;
+.about .words{
+  text-shadow: 0px 0px 11px rgba(0, 0, 0, 1);
+  color: white;
+  font-size: 2em;
+  max-width: 55%
   margin-top: -14.875em;
-  margin-right: 0;
   padding: 2em;
   padding-top: 4.82em;
   padding-bottom: 4.9em;
-  text-align: left;
-  width: 73%;
+  text-align: center;
+  /*width: 100%;*/
+  background: none;
 }
 .dbc{
   background-size: 75%;
   /*background-image: url("../images/dbc.png");*/
-  padding-bottom: 3em;
-  padding-top: 3em;
+
   -webkit-box-shadow: 0px 14px 29px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 14px 29px 0px rgba(50, 50, 50, 0.75);
   box-shadow:         0px 14px 29px 0px rgba(50, 50, 50, 0.75);
@@ -200,8 +207,6 @@ p {
 
 .wackoverflow > .section > .text {
   margin-top: 14em;
-  /*padding-top: 0;*/
-  /*height: 8.4em;*/
   top: -3.35em;
 }
 .light{
