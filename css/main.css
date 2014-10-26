@@ -11,16 +11,9 @@
   font-weight: 400;
   src: url(../fonts/Aaargh.ttf);
 }
-
-
 body {
   font-family: sans-serif;
 }
-
-.intro{
-  text-align: center;
-}
-
 a {
   color: lime;
   transition: text-shadow, color, .5s;
@@ -50,9 +43,14 @@ a:hover {
   color: black;
   left: 11.5%;
   top: -200px;
+  text-align: center;
 }
 .introText{
   display: inline;
+}
+.icons{
+  display: inline;
+  padding: 0;
 }
 .social{
   position: relative;
@@ -60,7 +58,9 @@ a:hover {
   text-decoration: none;
   display: none;
 }
-
+.social img{
+  height: 1em;
+}
 .visible{
   display: inline;
   -webkit-animation-name: fadeIn;
@@ -452,19 +452,32 @@ p {
   }
 }
 @media (min-width: 375px) and (orientation: portrait){
+  .textLeft{
+    text-align: center;
+  }
   .textLeft .introText{
     display: none;
   }
   .intro img{
-    height: 2em;
-    margin: 0 4% 0 4%;
+    height: 2.5em;
+    text-align: center;
+  }
+  .introText{
+    display: inherit;
+  }
+  .icons{
+    display: inline;
+    padding: 0;
+  }
+  .icons li{
+    margin: 0 2% 0 2%;
   }
   .about{
     height:20em;
     background-position: center bottom;
   }
-  .github{
-    margin-left: 23px;
+  .mail{
+    margin-right: 1%;
   }
   .thinkful .pic{
     height: 2em;
