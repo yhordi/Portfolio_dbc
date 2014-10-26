@@ -123,6 +123,7 @@ li {
   float: right;
   /*position: absolute;*/
 }
+
 .section{
   vertical-align: middle;
   /*height: 16.1em;*/
@@ -132,6 +133,9 @@ li {
   margin: auto;
   padding-top: 5em;
   font-size: 1.5em;
+}
+.dbc {
+  padding:  0;
 }
 .pic{
   margin: 0 3em 0 3em;
@@ -148,10 +152,11 @@ li {
   background: url(../images/oakland_night_skyline_web_by_thedude2.jpg);
   background-position: center;
   background-attachment: fixed;
-  height: 45em;
+  height: 25em;
   font-family: 'Oslo II';
   display: block;
-  text-align: center
+  text-align: center;
+  font-size: 2em ;
 }
 .about .words{
   text-shadow: 0px 0px 11px rgba(0, 0, 0, 1);
@@ -163,18 +168,9 @@ li {
   padding-top: 4.82em;
   padding-bottom: 4.9em;
   text-align: center;
-  /*width: 100%;*/
   background: none;
 }
-.dbc{
-  background-size: 75%;
-  /*background-image: url("../images/dbc.png");*/
 
-  -webkit-box-shadow: 0px 14px 29px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    0px 14px 29px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         0px 14px 29px 0px rgba(50, 50, 50, 0.75);
-  z-index: 1;
-}
 .dbc .text{
   margin-bottom: 0;
   margin-top: 0;
