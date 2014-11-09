@@ -93,6 +93,13 @@ a:hover {
 .projectsContainer{
   background-color: #2D8E71;
 }
+.project{
+  border: 1px dashed lime  ;
+  display: inline-block;
+}
+.project > a > img {
+  width: 100%;
+}
 .technologies{
   list-style-type: square;
 }
