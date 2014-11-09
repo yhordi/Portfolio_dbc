@@ -2,10 +2,13 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="responsivegridsystem/css/2cols.css">
-
+    <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="javascripts/lousybox.js"></script>
     <script type="text/javascript" src="javascripts/app.js"></script>
     <script type="text/javascript" src="javascripts/controller.js"></script>
     <script type="text/javascript" src="javascripts/view.js"></script>
@@ -71,17 +74,22 @@
       </div>
       <div class="bootTrack">
         <div class="project span_1_of_2" >
-          <a href='http://boot-track.herokuapp.com/'><img src="images/boottrack.png"/></a>
+          <a href='http://boot-track.herokuapp.com/'>
+            <img src="images/boottrack.png"/>
+          <a class="plus fa fa-plus-circle fa-3x" id="inline" href="#data"></a>
+          </a>
         </div>
         <div class="project span_1_of_2">
-          <a href="http://wackoverflow.herokuapp.com/"><img src="images/wackoverflow.png"/></a>
+          <a href="http://wackoverflow.herokuapp.com/">
+            <img src="images/wackoverflow.png"/>
+            <a class="plus fa fa-plus-circle fa-3x" id="inline" href="#data2"></a>
+          </a>
         </div>
-<!--           <p class="text">
-            <a href='http://boot-track.herokuapp.com/'>BootTrack</a> is an app that allows prospective <a href="http://devbootcamp.com/">Dev Bootcamp</a> students to make human connections in a fast and easy way. The app is built on a Ruby on Rails stack with a thick client using MustacheJS, AJAX, HTML 5, and SASS. The app uses a variety of Google apis, as well as the LinkedIn and DBC apis. Boottrack is a heavily tested app using Jasmine, Rspec, and Capybara testing frameworks.
-          </p> -->
+        <p class="hidden" id="data"><a href='http://boot-track.herokuapp.com/'>BootTrack</a> is an app that allows prospective <a href="http://devbootcamp.com/">Dev Bootcamp</a> students to make human connections in a fast and easy way. The app is built on a Ruby on Rails stack with a thick client using MustacheJS, AJAX, HTML 5, and SASS. The app uses a variety of Google apis, as well as the LinkedIn and DBC apis. Boottrack is a heavily tested app using Jasmine, Rspec, and Capybara testing frameworks.</p>
+        <p class="hidden" id="data2">
+          <a href="http://wackoverflow.herokuapp.com/">Wackoverflow</a> is a stack overflow clone featuring similar functionality. The team worked together on all parts of the app and later pairs focused on specific features together. I worked largely on the front end, building partials using embedded ruby and styling the app with vanilla CSS
+        </p>
       </div>
-<!--           <p class= "text"><a href="http://wackoverflow.herokuapp.com/">Wackoverflow</a> is a stack overflow clone featuring similar functionality. The team worked together on all parts of the app and later pairs focused on specific features together. I worked largely on the front end, building partials using embedded ruby and styling the app with vanilla CSS</p>
- -->
       <div class="section thinkful">
         <p class="text thinkfulText">
           <a href="http://www.thinkful.com">

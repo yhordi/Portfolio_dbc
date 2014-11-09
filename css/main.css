@@ -91,11 +91,18 @@ a:hover {
   -webkit-animation-duration: 1.5s;
 }
 .projectsContainer{
-  background-color: #2D8E71;
+  background-color: #5D5F5E;
 }
 .project{
-  border: 1px dashed lime  ;
+  border: 3px solid #EAF0E9;
+  background-color: #EAF0E9;
   display: inline-block;
+}
+.project > a{
+  color: black;
+}
+.plus {
+    font-size: 200%;
 }
 .project > a > img {
   width: 100%;
@@ -460,4 +467,8 @@ p {
   .footer{
     font-size: 1em;
   }
+}
+
+.hidden{
+  display: none;
 }
