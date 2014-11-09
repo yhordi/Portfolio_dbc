@@ -183,7 +183,7 @@ p {
   margin: 0;
 }
 .bootTrack{
-  background-image: url("../images/boottrack.png");
+  /*background-image: url("../images/boottrack.png");*/
   background-position: center;
   background-size: 100%;
   background-attachment: fixed;
