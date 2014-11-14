@@ -1,7 +1,15 @@
 $(document).ready(function() {
 
-  $("a#inline").fancybox({
+  $(".left").fancybox({
     'hideOnContentClick': true,
+    'maxWidth': 600,
+    'leftRatio': 0,
+  });
+
+    $(".right").fancybox({
+    'hideOnContentClick': true,
+    'maxWidth': 600,
+    'leftRatio': 1,
   });
 
 })
