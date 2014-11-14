@@ -15,7 +15,7 @@ body {
   font-family: 'verdana', sans-serif;
 }
 a {
-  color: lime;
+  color: #53A41E;
   transition: text-shadow, color, .5s;
   text-decoration: none;
   font-weight: bold;
@@ -103,12 +103,22 @@ a:hover {
   display: inline-block;
 }
 .project > a{
-  color: black;
+  color: #53A41E;
   margin: 3;
 }
+.fl-lt{
+  float: left;
+}
+.circle{
+  border-radius: 100%;
+  width: 10%;
+}
 .plus {
-    font-size: 200%;
-    padding: 1%;
+  font-size: 200%;
+  padding: 1%;
+}
+.plus:hover{
+  color: #53A41E;
 }
 .project > a > img {
   width: 100%;
@@ -123,18 +133,6 @@ li {
 .bullet{
   height: 10px;
 }
-.description{
-  background-attachment: top;
-  font-family: 'Oslo II';
-  font-size: 1em;
-  background-color: #bdc7bd;
-  opacity: 0;
-  height: 100%;
-  position: relative;
-  color: white;
-  transition: opacity, 1s;
-}
-
 .text {
   padding: 1em;
   color: black;
@@ -147,25 +145,24 @@ li {
   margin: auto;
   font-size: 1.5em;
 }
-.dbc {
-  padding:  0;
-}
 .pic{
-  margin: 0 3em 0 3em;
+  margin: 0 3em 0 2em;
 }
 .jordan{
   top: 2em;
   border-radius: 100%;
 }
+.fl-rt{
+  float: right;
+}
 .dbc .pic{
   display: inline;
-  float: right;
 }
 .about{
   background: url(../images/oakland_night_skyline_web_by_thedude2.jpg);
   background-position: center;
   background-attachment: fixed;
-  height: 25em;
+  height: 100%;
   font-family: 'Oslo II';
   display: block;
   text-align: center;
@@ -180,8 +177,8 @@ li {
   padding: 2em;
   padding-top: 4.82em;
   padding-bottom: 4.9em;
-  text-align: center;
-  background: none;
+  /*text-align: center;*/
+  /*background: none;*/
 }
 
 .dbc .text{
@@ -202,13 +199,7 @@ p {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 
-.thinkfulText{
-  padding: 2em 0 2em 0;
-  margin: 0;
-  float: right
-}
 .thinkful .pic{
-  float: left;
   height: 3em;
 }
 .description:hover{
