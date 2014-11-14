@@ -131,25 +131,20 @@ li {
 
 .text {
   z-index: 1;
-  margin-top: 9em;
   padding: 1em;
   color: white;
-  /*text-align: center;*/
   background-color: #353333;
 }
 .right{
   float: right;
-  /*position: absolute;*/
 }
 
 .section{
   vertical-align: middle;
-  /*height: 16.1em;*/
   background-repeat: no-repeat;
   background-position: center;
   font-family: 'Oslo II';
   margin: auto;
-  /*padding-top: 5em;*/
   font-size: 1.5em;
 }
 .dbc {
