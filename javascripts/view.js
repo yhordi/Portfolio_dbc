@@ -3,17 +3,29 @@ var View = function() {
 
 View.prototype = {
   fix: function () {
-    if ($(window).scrollTop() >= 296) {
+    if ($(window).scrollTop() > 296) {
       this.view.addFixed()
       this.view.addSlideIn()
       this.view.socialVisible()
+      this.view.textLeft()
+      this.view.hitTop()
       // this.view.addZIndex()
-      this.view.fadeArrowOut()
-    } else {
+      // this.view.fadeArrowOut()
+    } else if ($(window).scrollTop() < 296 && hit == true) {
       this.view.removeFixed()
       this.view.removeSocialVisible()
       this.view.removeSlideIn()
-      }
+      this.view.removeTextLeft()
+      this.view.unhitTop()
+    } else if ($(window).scrollTop() < 296 && hit == false) {
+      this.view.removeCenter()
+    }
+  },
+  hitTop: function () {
+    hit = true
+  },
+  unhitTop: function () {
+    hit = false
   },
   addFixed: function () {
     $(".intro").addClass("fixed");
@@ -45,6 +57,17 @@ View.prototype = {
   removeFixed: function() {
     $(".intro").removeClass("fixed");
   },
+  textLeft: function(){
+    $(".intro").addClass("textLeft");
+  },
+  removeTextLeft: function(){
+    console.log("removeTextLeft")
+    $(".intro").addClass("textCenter");
+    $(".intro").removeClass("textLeft")
+  },
+  removeCenter: function(){
+    $(".intro").removeClass("textCenter")
+  },
   socialVisible: function() {
     $(".social").addClass("visible")
   },
@@ -61,3 +84,5 @@ View.prototype = {
     $(".defrost").css(".glass")
   }
 }
+
+var hit
