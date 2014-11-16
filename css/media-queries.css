@@ -1,0 +1,155 @@
+@media screen and (max-width: 1440px){
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: translateX(0);
+    }
+
+    100% {
+      -webkit-transform: translateX(-11.5%);
+    }
+  }
+  .textRight{
+    text-align: right;
+  }
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px){
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: translateX(0);
+    }
+
+    100% {
+      -webkit-transform: translateX(-11.5%);
+    }
+  }
+  .textLeft{
+    font-size: 1em;
+  }
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+  .pic{
+    display: none;
+  }
+}
+@media screen and (min-width: 1600px){
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: translateX(0);
+      /*transform: translateX(0);*/
+    }
+
+    100% {
+      -webkit-transform: translateX(-16%);
+      /*transform: translateX(100%);*/
+    }
+  }
+  .intro{
+      padding-right: 66%;
+  }
+  .caption{
+      margin-bottom: 26em;
+  }
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+  .about .text{
+    /*margin-left: 21%;*/
+  }
+
+}
+@media screen and (min-width: 1920px){
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: translateX(0);
+      /*transform: translateX(0);*/
+    }
+
+    100% {
+      -webkit-transform: translateX(-16%);
+      /*transform: translateX(100%);*/
+    }
+  }
+  .intro{
+      padding-right: 66%;
+  }
+  .caption{
+      margin-bottom: 26em;
+  }
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+    .about .text{
+    padding-bottom: 6.2em;
+  }
+}
+@media (min-width: 375px) and (orientation: portrait){
+  .textLeft{
+    text-align: center;
+  }
+  .pic{
+    display: none;
+  }
+  .dbc .pic{
+    display: none;
+  }
+  .textLeft .introText{
+    display: none;
+  }
+  .intro img{
+    height: 2.5em;
+    text-align: center;
+  }
+  .introText{
+    display: inherit;
+  }
+  .project{
+    margin-bottom: 1em;
+  }
+  .icons{
+    display: inline;
+    padding: 0;
+  }
+  .icons li{
+    margin: 0 2% 0 2%;
+  }
+  .about{
+    height:20em;
+    background-position: center bottom;
+  }
+  .mail{
+    margin-right: 1%;
+  }
+  .thinkfulText{
+    float: none;
+  }
+  .buffer{
+    font-size: 6em;
+  }
+  .footer{
+    font-size: 1em;
+  }
+  .about{
+    display: none;
+  }
+  /*.footer*/
+}
