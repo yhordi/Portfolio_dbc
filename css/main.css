@@ -152,7 +152,8 @@ li {
 }
 .dbc .pic{
   display: inline;
-  width: 14em;
+  padding-top: 1em;
+  width: 10em;
 }
 .about{
   background: url(../images/oakland_night_skyline_web_by_thedude2.jpg);
@@ -177,10 +178,6 @@ li {
 .dbc .text{
   margin-bottom: 0;
   margin-top: 0;
-}
-
-p {
-  margin: 0;
 }
 .bootTrack{
   padding: 1em;
