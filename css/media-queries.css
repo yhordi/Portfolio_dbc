@@ -47,16 +47,19 @@
   @-webkit-keyframes slideIn {
     0% {
       -webkit-transform: translateX(0);
-      /*transform: translateX(0);*/
+      transform: translateX(0);
     }
 
     100% {
-      -webkit-transform: translateX(-16%);
-      /*transform: translateX(100%);*/
+      -webkit-transform: translateX(-11.5%);
+      transform: translateX(-11.5%);
     }
   }
+    .project > a > img {
+    height: 22em;
+  }
   .intro{
-      padding-right: 66%;
+      /*padding-right: 66%;*/
   }
   .caption{
       margin-bottom: 26em;
@@ -77,16 +80,16 @@
   @-webkit-keyframes slideIn {
     0% {
       -webkit-transform: translateX(0);
-      /*transform: translateX(0);*/
+      transform: translateX(0);
     }
 
     100% {
-      -webkit-transform: translateX(-16%);
-      /*transform: translateX(100%);*/
+      -webkit-transform: translateX(-11.5%);
+      transform: translateX(-11.5%);
     }
   }
   .intro{
-      padding-right: 66%;
+      /*padding-right: 66%;*/
   }
   .caption{
       margin-bottom: 26em;
@@ -98,9 +101,14 @@
     animation-name: slideIn;
     animation-duration: 1s;
   }
-    .about .text{
+  .about .text{
     padding-bottom: 6.2em;
   }
+  .dbc .pic {
+    padding-top: 0;
+
+  }
+
 }
 @media (min-width: 375px) and (orientation: portrait){
   .textLeft{
