@@ -51,9 +51,12 @@
     }
 
     100% {
-      -webkit-transform: translateX(-16%);
-      transform: translateX(-16%);
+      -webkit-transform: translateX(-11.5%);
+      transform: translateX(-11.5%);
     }
+  }
+    .project > a > img {
+    height: 22em;
   }
   .intro{
       /*padding-right: 66%;*/
@@ -103,7 +106,9 @@
   }
   .dbc .pic {
     padding-top: 0;
+
   }
+
 }
 @media (min-width: 375px) and (orientation: portrait){
   .textLeft{
