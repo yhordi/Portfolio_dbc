@@ -47,12 +47,12 @@
   @-webkit-keyframes slideIn {
     0% {
       -webkit-transform: translateX(0);
-      /*transform: translateX(0);*/
+      transform: translateX(0);
     }
 
     100% {
       -webkit-transform: translateX(-16%);
-      /*transform: translateX(100%);*/
+      transform: translateX(-16%);
     }
   }
   .intro{
@@ -81,8 +81,8 @@
     }
 
     100% {
-      -webkit-transform: translateX(-6.95%);
-      /*transform: translateX(100%);*/
+      -webkit-transform: translateX(-6.75%);
+      transform: translateX(-6.75%);
     }
   }
   .intro{
@@ -98,13 +98,9 @@
     animation-name: slideIn;
     animation-duration: 1s;
   }
-  .about .text{
+    .about .text{
     padding-bottom: 6.2em;
   }
-  .project > a > img {
-    max-height: 27em;
-  }
-
 }
 @media (min-width: 375px) and (orientation: portrait){
   .textLeft{
