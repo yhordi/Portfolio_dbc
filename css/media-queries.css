@@ -98,9 +98,13 @@
     animation-name: slideIn;
     animation-duration: 1s;
   }
-    .about .text{
+  .about .text{
     padding-bottom: 6.2em;
   }
+  .project > a > img {
+    max-height: 27em;
+  }
+
 }
 @media (min-width: 375px) and (orientation: portrait){
   .textLeft{
