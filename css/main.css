@@ -25,7 +25,7 @@ a:hover {
   text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
   transition: text-shadow, color, .5s;
 }
-.landing{
+.landing {
   padding-bottom: 10em;
   background-color: #53A41E;
   width: 100%;
@@ -93,10 +93,12 @@ a:hover {
   padding: 4% 2% 4% 2%;
   text-align: center;
 }
+.hGutter{
+  padding: 1%;
+}
 .project{
   border: 3px solid #EAF0E9;
   background-color: #EAF0E9;
-  margin: 0 4.15% 0 4.15%;
 }
 .project > a {
   color: #53A41E;
@@ -111,6 +113,9 @@ a:hover {
 .circle{
   border-radius: 100%;
   /*width: 10%;*/
+}
+.center{
+  text-align: center;
 }
 .plus {
   font-size: 200%;
@@ -135,11 +140,7 @@ li {
   padding: 1em;
   background-color: #D0D1D0;
 }
-.section{
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: auto;
+.section {
   font-size: 1.5em;
 }
 .jordan{
@@ -149,27 +150,21 @@ li {
 .fl-rt{
   float: right;
 }
-.dbc .pic{
-  display: inline;
-  padding-top: 1em;
-  width: 10em;
+.block{
+  display: block;
 }
-.about{
+.dbc .pic{
+  padding-top: 1em;
+}
+.oakland{
   background: url(../images/oakland_night_skyline_web_by_thedude2.jpg);
   background-position: center;
   background-attachment: fixed;
   height: 100%;
   font-family: 'Aaargh';
-  display: block;
-  text-align: center;
-  font-size: 2em;
-}
-.oakland{
   color: white;
-  font-size: 2em;
-  padding: 2em;
+  font-size: 4em;
   padding-top: 4.82em;
-  /*padding-bottom: 4.9em;*/
 }
 
 .dbc .text{
@@ -293,7 +288,7 @@ li {
       padding-right: 66%;
   }
   .caption{
-      margin-bottom: 26em;
+      /*margin-bottom: 26em;*/
   }
   .slideIn {
     -webkit-animation-name: slideIn;
