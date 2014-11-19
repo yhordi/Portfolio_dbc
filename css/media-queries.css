@@ -58,11 +58,9 @@
     .project > a > img {
     height: 22em;
   }
-  .intro{
-      /*padding-right: 66%;*/
-  }
+
   .caption{
-      margin-bottom: 26em;
+      margin-bottom: 13em;
   }
   .slideIn {
     -webkit-animation-name: slideIn;
@@ -71,10 +69,6 @@
     animation-name: slideIn;
     animation-duration: 1s;
   }
-  .about .text{
-    /*margin-left: 21%;*/
-  }
-
 }
 @media screen and (min-width: 1920px){
   @-webkit-keyframes slideIn {
@@ -87,9 +81,6 @@
       -webkit-transform: translateX(-11.5%);
       transform: translateX(-11.5%);
     }
-  }
-  .intro{
-      /*padding-right: 66%;*/
   }
   .caption{
       margin-bottom: 26em;
@@ -127,11 +118,14 @@
     height: 2.5em;
     text-align: center;
   }
+  .caption{
+    margin-bottom: 0px;
+  }
   .introText{
     display: inherit;
   }
   .project{
-    margin-bottom: 1em;
+    /*margin: 0 0 1em 0;*/
   }
   .icons{
     display: inline;
@@ -156,7 +150,9 @@
   .footer{
     font-size: 1em;
   }
-  .about{
+  .oakland{
     display: none;
   }
+
 }
+
