@@ -193,13 +193,12 @@ li {
 }
 .footer{
   margin-top: 1em;
-  /*font-size: .8em;*/
   text-align: center;
   color:  white;
 }
-.textLeft{
-  text-align: left;
-}
+  .textLeft{
+    text-align: left;
+  }
 .textCenter{
   text-align: center;
 }

@@ -9,8 +9,6 @@ View.prototype = {
       this.view.socialVisible()
       this.view.textLeft()
       this.view.hitTop()
-      // this.view.addZIndex()
-      // this.view.fadeArrowOut()
     } else if ($(window).scrollTop() < 296 && hit == true) {
       this.view.removeFixed()
       this.view.removeSocialVisible()
@@ -61,7 +59,6 @@ View.prototype = {
     $(".intro").addClass("textLeft");
   },
   removeTextLeft: function(){
-    console.log("removeTextLeft")
     $(".intro").addClass("textCenter");
     $(".intro").removeClass("textLeft")
   },
