@@ -105,6 +105,9 @@
   .textLeft{
     text-align: center;
   }
+  .gutters .span_6{
+    width: 100%;
+  }
   .pic{
     display: none;
   }
@@ -123,9 +126,6 @@
   }
   .introText{
     display: inherit;
-  }
-  .project{
-    /*margin: 0 0 1em 0;*/
   }
   .icons{
     display: inline;

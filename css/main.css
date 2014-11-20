@@ -112,7 +112,6 @@ a:hover {
 }
 .circle{
   border-radius: 100%;
-  /*width: 10%;*/
 }
 .center{
   text-align: center;
@@ -194,13 +193,12 @@ li {
 }
 .footer{
   margin-top: 1em;
-  /*font-size: .8em;*/
   text-align: center;
   color:  white;
 }
-.textLeft{
-  text-align: left;
-}
+  .textLeft{
+    text-align: left;
+  }
 .textCenter{
   text-align: center;
 }
