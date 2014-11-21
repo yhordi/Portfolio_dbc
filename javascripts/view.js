@@ -59,11 +59,11 @@ View.prototype = {
     $(".intro").addClass("textLeft");
   },
   removeTextLeft: function(){
-    $(".intro").addClass("textCenter");
+    $(".intro").addClass("center");
     $(".intro").removeClass("textLeft")
   },
   removeCenter: function(){
-    $(".intro").removeClass("textCenter")
+    $(".intro").removeClass("center")
   },
   socialVisible: function() {
     $(".social").addClass("visible")

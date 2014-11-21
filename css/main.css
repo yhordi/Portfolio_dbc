@@ -14,6 +14,9 @@
 body {
   font-family: 'verdana', sans-serif;
 }
+li {
+  display: inline;
+}
 a {
   color: #53A41E;
   transition: text-shadow, color, .5s;
@@ -58,7 +61,7 @@ a:hover {
   display: none;
 }
 .social img{
-  height: 1em;
+  height: 4%;
 }
 .visible{
   display: inline;
@@ -86,7 +89,7 @@ a:hover {
   -webkit-animation-delay: 1.5s;
   -webkit-animation-duration: 1.5s;
 }
-.projectsContainer{
+.darkBg{
   background-color: #5D5F5E;
 }
 .projects{
@@ -99,10 +102,6 @@ a:hover {
 .project{
   border: 3px solid #EAF0E9;
   background-color: #EAF0E9;
-}
-.project > a {
-  color: #53A41E;
-  margin: 3;
 }
 .fl-lt{
   float: left;
@@ -120,40 +119,16 @@ a:hover {
   font-size: 200%;
   padding: 1%;
 }
-.plus:hover{
-  color: #53A41E;
-}
 .project > a > img {
   width: 98%;
-}
-.technologies{
-  list-style-type: square;
-}
-li {
-  display: inline;
-}
-.bullet{
-  height: 10px;
 }
 .text {
   padding: 1em;
   background-color: #D0D1D0;
-}
-.section {
-  font-size: 1.5em;
-}
-.jordan{
-  top: 2em;
-  border-radius: 100%;
-}
-.fl-rt{
-  float: right;
+  font-size: 1.2em;
 }
 .block{
   display: block;
-}
-.dbc .pic{
-  padding-top: 1em;
 }
 .oakland{
   background: url(../images/oakland_night_skyline_web_by_thedude2.jpg);
@@ -166,173 +141,31 @@ li {
   padding-top: 4.82em;
 }
 
-.dbc .text{
-  margin-bottom: 0;
-  margin-top: 0;
-}
-.bootTrack{
-  padding: 1em;
-  text-align: center;
-}
-
-.light{
-  color: white;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
-}
-
-.description:hover{
-  transition: opacity, 1s;
-  opacity: .94;
-}
-.displayInline{
-  display: inline;
-}
-.fixed {
-  top: 0;
-  position: fixed;
-}
 .footer{
   margin-top: 1em;
   text-align: center;
   color:  white;
 }
-  .textLeft{
-    text-align: left;
-  }
-.textCenter{
-  text-align: center;
-}
 .buffer{
   padding: 8%;
-  /*height: 30%;*/
   text-align: center;
   font-size: 3em;
   background-color: #2C7000;
   font-family: 'outage';
 }
-
-@-webkit-keyframes arrowFadeOut {
-  0% {
-    -webkit-transform: translateX(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(200px);
-  }
-}
-.arrowFadeOut {
-  -webkit-animation-name: arrowFadeOut;
-  -webkit-animation-duration: .5s;
-  -webkit-animation-fill-mode: forwards;
-  /*animation-name: fadeOut;*/
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-20px);
-    transform: translateX(-20px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-20px);
-    -ms-transform: translateX(-20px);
-    transform: translateX(-20px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-    100% {
-      -webkit-transform: translateX(-16%);
-      /*transform: translateX(100%);*/
-    }
-  }
-  .intro{
-      padding-right: 66%;
-  }
-  .caption{
-      /*margin-bottom: 26em;*/
-  }
-  .slideIn {
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: .5s;
-    -webkit-animation-fill-mode: forwards;
-    animation-name: slideIn;
-    animation-duration: 1s;
-  }
-    .about .text{
-/*    margin-left: 18%;
-    width: 77%;*/
-    padding-bottom: 6.2em;
-  }
-}
-@media (min-width: 375px) and (orientation: portrait){
-  .textLeft{
-    text-align: center;
-  }
-  .textLeft .introText{
-    display: none;
-  }
-  .intro img{
-    height: 2.5em;
-    text-align: center;
-  }
-  .introText{
-    display: inherit;
-  }
-  .icons{
-    display: inline;
-    padding: 0;
-  }
-  .icons li{
-    margin: 0 2% 0 2%;
-  }
-  .about{
-    height:20em;
-    background-position: center bottom;
-  }
-  .mail{
-    margin-right: 1%;
-  }
-  .footer{
-    font-size: 1em;
-  }
-}
 .hidden{
   display: none;
+}
+
+/* classes used exclusively by view.js */
+
+.fixed {
+  top: 0;
+  position: fixed;
+}
+.displayInline{
+  display: inline;
+}
+.textLeft{
+  text-align: left;
 }
